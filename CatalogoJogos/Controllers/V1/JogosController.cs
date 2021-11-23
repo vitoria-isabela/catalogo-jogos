@@ -47,7 +47,7 @@ namespace CatalogoJogos.Controllers.V1
         }
 
         [HttpPost]
-        public async Task<ActionResult<JogoViewModel>> InserirJogo([FromBody] JogoInputModel jogoInputModel)
+        public async Task<IActionResult> Post([FromBody] JogoInputModel jogoInputModel)
         {
             try
             {
